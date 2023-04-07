@@ -6,10 +6,12 @@ public class Employee {
 
     private final String name;
     private final String lastName;
+    private final int numberOfDepartment;
 
-    public Employee(String name, String lastName) {
+    public Employee(String name, String lastName, int numberOfDepartment) {
         this.name = name;
         this.lastName = lastName;
+        this.numberOfDepartment = numberOfDepartment;
     }
 
     public String getName() {
@@ -18,6 +20,10 @@ public class Employee {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public int getNumberOfDepartment() {
+        return numberOfDepartment;
     }
 
     @Override
