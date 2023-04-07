@@ -6,12 +6,10 @@ public class Employee {
 
     private final String name;
     private final String lastName;
-    private final int numberOfDepartment;
 
-    public Employee(String name, String lastName, int numberOfDepartment) {
+    public Employee(String name, String lastName) {
         this.name = name;
         this.lastName = lastName;
-        this.numberOfDepartment = numberOfDepartment;
     }
 
     public String getName() {
@@ -22,8 +20,8 @@ public class Employee {
         return lastName;
     }
 
-    public int getNumberOfDepartment() {
-        return numberOfDepartment;
+    public String getFullName() {
+        return name + " " + lastName;
     }
 
     @Override
